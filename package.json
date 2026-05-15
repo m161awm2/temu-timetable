@@ -1,0 +1,24 @@
+{
+  "name": "temu-timetable",
+  "version": "1.0.0",
+  "description": "시간표는 세명컴고 1학년 2반 기준, 시간표를 정적으로 수정 및 추가 가능한 웹사이트입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m161awm2/temu-timetable.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/m161awm2/temu-timetable/issues"
+  },
+  "homepage": "https://github.com/m161awm2/temu-timetable#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

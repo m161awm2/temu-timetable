@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>테무시간알리미</title>
+    <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
+    <a href="https://github.com/m161awm2/temu-timetable" target="_blank">
+<img src="images/temu_timetable.png" width="10%" height="10%">
+</a>
+<figure>
+  <blockquote>
+    <a href="https://namu.wiki/w/컴시간알리미#s-5" target="_blank">"남의 자료를 도둑질하면 안되죠. 돈내고 쓰세요."</a>
+  </blockquote>
+  <figcaption>▶ <cite>컴시간알리미</cite> 말씀</figcaption>
+</figure>
+
     <table border="1">
+        <thead>
         <tr id="weekList">
             <td>교시</td>
         </tr>
+        </thead>
+        <tbody>
         <tr id="1교시">
             <td>1(9:00-9:50)</td>
         </tr>
@@ -31,13 +45,21 @@
         <tr id="7교시">
             <td>7(15:00-15:50)</td>
         </tr>
+        </tbody>
     </table>
-    <fieldset>
-        <legend>바꿀 시간표를 입력하세요</legend>
-       <label><input type="text" id="newSchedule" placeholder="새로운 시간표를 입력하세요"></label>
-         <button>시간표 바꾸기</button>
-    <div id="postList"></div>
-    </fildset>
-    <script src="/public/main.js"></script>
+<form id="form">
+  <fieldset>
+    <legend>바꿀 시간표를 입력하세요</legend>
+
+    <input type="number" id="row" placeholder="수정할 행" required>
+    <input type="number" id="col" placeholder="수정할 열" required>
+    <input type="text" id="change" placeholder="수정할 과목 이름" required>
+
+    <button type="submit">시간표 바꾸기</button><br>
+    <button type="button" id="reset">초기화</button>
+    <p id="message"></p>
+  </fieldset>
+</form>
+    <script src="./public/main.js"></script>
 </body>
 </html>
