@@ -23,6 +23,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   const row = Number(document.getElementById("row").value) - 1;
   const col = Number(document.getElementById("col").value) - 1;
+  if(col<=0){return;}
   const change = document.getElementById("change").value;
 
   if (change.length === 0 || change.length > 2) {
